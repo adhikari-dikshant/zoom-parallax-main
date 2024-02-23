@@ -6,20 +6,21 @@ import Lenis from '@studio-freight/lenis'
 
 export default function Home() {
 
-    useEffect( () => {
+    useEffect(() => {
         const lenis = new Lenis()
-       
+
         function raf(time) {
             lenis.raf(time)
             requestAnimationFrame(raf)
         }
 
         requestAnimationFrame(raf)
-    },[])
+    }, [])
 
     return (
         <main className={styles.main}>
             <ZoomParallax />
+            <h1>hello</h1>
         </main>
     )
 }
