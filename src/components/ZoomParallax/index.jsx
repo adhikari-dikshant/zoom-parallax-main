@@ -60,7 +60,7 @@ export default function Index() {
             <div className={styles.sticky}>
                 {
                     pictures.map(({ src, scale }, index) => {
-                        return (<motion.div key={index} style={{ scale }} className={styles.el}>
+                        return <motion.div key={index} style={{ scale }} className={styles.el}>
                             <div className={styles.imageContainer}>
                                 <Image
                                     src={src}
@@ -69,7 +69,7 @@ export default function Index() {
                                     placeholder='blur'
                                 />
                             </div>
-                        </motion.div>)
+                        </motion.div>
                     })
                 }
             </div>
